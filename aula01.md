@@ -2,13 +2,13 @@
 
 ## Dados X Informação
 
-### Dados:
+### Dados
 
 São fatos em uma forma primária, que podem ser armazenados em algum meio.
 
 - Ex.: CPF, Nome, Data
 
-### Informação:
+### Informação
 
 São os fatos organizados de maneira a produzir um significado -> Dados colocados em contexto.
 
@@ -27,4 +27,3 @@ Sistema de Gerenciamento de Bancos de Dados
 - Um SGBD é uma coleção de softwares que permite aos usuários criarem e manterem um ou mais bancos de dados.
 - São usados nas tarefas de definição, construção, manipulação e compartilhamento dos bancos de dados entre aplicações e usuários.
 - Permitem proteger o banco de dados e mantê-lo ao longo do tempo.
-
