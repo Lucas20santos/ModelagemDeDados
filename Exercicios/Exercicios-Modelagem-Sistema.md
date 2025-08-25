@@ -125,6 +125,71 @@
 ### Cenários Práticos
 
 1. Modele o processo de compra online de um cliente.
+Para modelar um sistema de compras online, você precisaria identificar as entidades (no contexto de modelagem de dados) ou classes (no contexto de modelagem orientada a objetos) que representam os principais elementos e atores do processo.
+
+Aqui estão as entidades ou classes essenciais, com suas características e relacionamentos.
+
+### Entidades/Classes Essenciais
+
+#### 1. Cliente (ou Usuário)
+
+Representa a pessoa que está fazendo a compra. É a entidade central para rastrear a atividade do usuário.
+
+* **Atributos:** `id_cliente`, `nome`, `email`, `senha`, `data_cadastro`, `telefone`.
+
+#### 2. Produto
+
+Representa o item que está sendo vendido. É a base do catálogo da loja.
+
+* **Atributos:** `id_produto`, `nome_produto`, `descricao`, `preco`, `sku` (código de estoque), `url_imagem`.
+
+#### 3. Pedido
+
+Representa a transação de compra em si. Um `Pedido` é um conjunto de produtos comprados por um `Cliente` em um determinado momento.
+
+* **Atributos:** `id_pedido`, `data_criacao`, `status_pedido` (ex: `pendente`, `processando`, `enviado`, `entregue`, `cancelado`), `valor_total`.
+
+#### 4. Item do Pedido (ou Linha do Pedido)
+
+Essa é uma classe crucial que faz a conexão entre um `Pedido` e um `Produto`. Como um pedido pode ter vários produtos e um produto pode estar em vários pedidos, essa entidade resolve o relacionamento muitos-para-muitos.
+
+* **Atributos:** `id_item_pedido`, `quantidade`, `preco_unitario_na_compra`.
+
+#### 5. Pagamento
+
+Representa a transação financeira para o pagamento do pedido.
+
+* **Atributos:** `id_pagamento`, `metodo_pagamento`, `valor`, `status_pagamento` (ex: `pendente`, `aprovado`, `rejeitado`), `data_pagamento`.
+
+#### 6. Endereço
+
+Representa os endereços de entrega e faturamento do cliente. Um cliente pode ter vários endereços registrados.
+
+* **Atributos:** `id_endereco`, `rua`, `numero`, `complemento`, `cidade`, `estado`, `cep`, `tipo_endereco` (ex: `entrega`, `faturamento`).
+
+---
+
+#### Relacionamentos entre as Entidades
+
+Os relacionamentos são tão importantes quanto as entidades. Eles definem como as informações se conectam.
+
+* Um **Cliente** faz **N** (muitos) **Pedidos**. (Relacionamento de 1 para N)
+* Um **Pedido** contém **N** (muitos) **Itens do Pedido**. (Relacionamento de 1 para N)
+* Um **Produto** pode estar em **N** (muitos) **Itens do Pedido**. (Relacionamento de 1 para N)
+* Um **Pedido** pode ter **1** (um) **Pagamento** (e um `Pagamento` pertence a um `Pedido`). (Relacionamento de 1 para 1)
+* Um **Cliente** tem **N** (muitos) **Endereços**. (Relacionamento de 1 para N)
+
+#### Entidades Adicionais (Para Modelos Mais Complexos)
+
+* **Estoque:** Para gerenciar a disponibilidade de produtos.
+* **Categoria:** Para organizar os produtos (ex: "Eletrônicos", "Moda").
+* **Avaliação:** Para armazenar as opiniões e notas dos clientes sobre os produtos.
+* **Cupom de Desconto:** Para gerenciar promoções.
+* **Envio:** Para rastrear a entrega do pedido (transportadora, código de rastreio, status).
+* **Carrinho de Compras:** Uma classe temporária que armazena os itens que o usuário selecionou antes de finalizar o pedido.
+
+---
+
 1. Modele um diagrama de classes para um sistema de gerenciamento de biblioteca.
 1. Crie um diagrama de sequência para o login de um usuário.
 1. Como você modelaria um sistema de controle de acesso a um prédio?
