@@ -9,6 +9,7 @@ Um relacionamento é uma conexão entre itens. Existem váriso tipos de relacion
 - Agregação
 - Compisão
 - Generalização
+- Implementação
 
 ### Setas indicando o tipo de relacionamento entre as classes
 
@@ -72,8 +73,6 @@ Na prática, podemos ter associações n-áiras, conectando quaisquer número de
 Relacionamento mais específico do que a associação, indica que uma classe é um contêiner ou uma coleção de outras classes. As classes contidas não dependem do contêiner - assim, quando o contêiner é destruído, as classes continuam existindo.
 
 Do tipo "Classe A possui uma Classe B"
-
-![Relacionamento de agregação](image-4.png)
 
 ![Relacionamento de agregação](image-5.png)
 
