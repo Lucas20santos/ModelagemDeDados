@@ -67,8 +67,11 @@
         - **Exemplo**: Um pedido (todo) é composto por itens (parte). Se o pedido for cacelado, os itens associados a ele também são destruídos e não têm mais propósito.
 1. Crie um diagrama de classes para um sistema de biblioteca com as classes `Livro`, `Membro` e `Empréstimo`.
     - ![Resolução do exercício acima](image.png)
+
 1. Explique a relação de **Generalização (Herança)**.
+
 1. Modele a relação de herança entre `Animal`, `Cachorro` e `Gato`.
+    - ![alt text](image-5.png)
 1. O que é a relação de **Realização (Implementação)**?
 1. Modele a relação onde a classe `Carro` implementa a interface `Dirigível`.
 1. Crie um diagrama de classes para um sistema de e-commerce com as classes `Produto`, `CarrinhoDeCompras` e `ItemDoCarrinho`.
