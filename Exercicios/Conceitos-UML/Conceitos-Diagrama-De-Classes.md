@@ -69,12 +69,21 @@
     - ![Resolução do exercício acima](image.png)
 
 1. Explique a relação de **Generalização (Herança)**.
-
+    - A generalização, ou herança, é um relacionamento entre classes onde uma classe mais específica (subclasse) herda atributos e métodos de uma classe mais geral(superclasse), criando uma hierarquia do tipo "é um tipo de". Por exemplo, um "Carrocho" é um tipo de "Animal", herdando características gerais como "cores" e "nome" e adicionando outras específicas. Isso promove a reutilização de código, facilta a manutençaõ do sistema e permite modelar relações de especialização de forma eficiente.
 1. Modele a relação de herança entre `Animal`, `Cachorro` e `Gato`.
-    - ![alt text](image-5.png)
+    - ![alt text](image-6.png)
 1. O que é a relação de **Realização (Implementação)**?
+    - A Relação de Realização (ou Implementaçaõ) em modelagem UML representa que um elemento do modelo (o cliente) implementa ou cumpre o comportamento especificado por outro elemento (o fornecedor), como quando uma classe implementa os métodos definidos numa interface. É um tipo de relacionamento de abstração onde um elemento mais concreto fornece a realização de um contrato especificado por outro elemento mais abstrato.
+    - Características Principias:
+        - **Fornecedor e Cliente**: Existe um elemento que define uma especificação ou um contrato (o fornecedor) e outro elemento que fornece a implementação desse comportamento (o cliente).
+        - **Contrato**: A relação pode ser vista como um cliente que cumpre o "contrato" de comportamento estabelecido pelo fornecedor.
+        - **Símbolo Gráfico**: Em diagrams UML, é representado por uma linha tracejada com uma ponta de seta vazada, apontando do cliente para o fornecedor.
+        - **Aplicações**:
+            - **Interfaces e Classes**: Uma classe que implementa as operações (métodos) definidas numa interface é um exemplo clássico de realização.
+            - **Componentes e Classes**: Um componente pode ser realizado por um conjunto de classes que fornecem sua implementação.
+            - **Casos de Uso**: Uma instância de colaboração pode conter os objetos e as mensagens necessários para implementar um cado de uso.
 1. Modele a relação onde a classe `Carro` implementa a interface `Dirigível`.
-1. Crie um diagrama de classes para um sistema de e-commerce com as classes `Produto`, `CarrinhoDeCompras` e `ItemDoCarrinho`.
+    - ![Resolução do exercicio de interface](image-7.png)
 1. Adicione a classe `Pagamento` ao diagrama do e-commerce.
 1. Modele a relação entre uma classe `Curso` e a classe `Aluno`. Considere que um curso pode ter muitos alunos.
 1. Adicione um atributo estático `proximoId` à classe `Pedido`.
