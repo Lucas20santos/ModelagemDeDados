@@ -40,7 +40,7 @@ Essas respostas viram **entidades**.
 
 ---
 
-# 🧩 2️⃣ O que é **Atributo**?
+## 🧩 2️⃣ O que é **Atributo**?
 
 👉 **Atributo é uma característica de uma entidade.**
 
@@ -80,7 +80,7 @@ Ex:
 
 ---
 
-# 🔗 3️⃣ O que é **Relacionamento**?
+## 🔗 3️⃣ O que é **Relacionamento**?
 
 👉 **Relacionamento é como duas entidades se conectam.**
 
@@ -88,7 +88,7 @@ Ele responde:
 
 > *“Como uma entidade se relaciona com a outra?”*
 
-### 📌 Exemplos
+### 📌 Exemplos 3
 
 * Cliente **faz** Pedido
 * Pedido **contém** Produto
@@ -116,7 +116,7 @@ Ele responde:
 
 ---
 
-# 🧠 Juntando tudo (exemplo completo)
+## 🧠 Juntando tudo (exemplo completo)
 
 ### Sistema de Vendas
 
@@ -164,7 +164,7 @@ ItemPedido:
 
 ---
 
-# 🚨 Erros comuns de iniciantes (importante)
+## 🚨 Erros comuns de iniciantes (importante)
 
 ❌ Criar entidade para tudo
 ❌ Criar atributo que representa outra entidade
@@ -173,7 +173,7 @@ ItemPedido:
 
 ---
 
-# 🧠 Regra de ouro da modelagem
+## 🧠 Regra de ouro da modelagem
 
 > **Entidade = o que é**
 > **Atributo = o que descreve**
