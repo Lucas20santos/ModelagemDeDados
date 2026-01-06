@@ -14,12 +14,10 @@ Pensar como **modelador**, não como programador.
 * Cardinalidade (1:1, 1:N, N:N)
 * Chave primária e estrangeira
 * Normalização:
-
   * 1FN
   * 2FN
   * 3FN
 * Diferença clara entre:
-
   * **Regra de negócio**
   * **Regra de sistema**
 
