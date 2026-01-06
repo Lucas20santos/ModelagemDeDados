@@ -26,8 +26,9 @@ Dica:
 
 ✏️ Escreva algo como:
 
-* Entidade 1: …
-* Entidade 2: …
+* Entidade 1: Pacientes - Corretas e Essenciais
+* Entidade 2: Médicos - Corretas e Essenciais
+* Entidade 3: Consultas - Corretas e Essenciais
 
 ---
 
@@ -48,6 +49,23 @@ Entidade: Exemplo
 * Não coloque outra entidade como atributo
 * Pense no mínimo necessário
 
+✏️ Escreva algo como:
+
+* Entidade 1: Pacientes - Corretas e Essenciais
+  * Atributo 1: id_paciente
+  * Atributo 2: nome
+  * Atributo 3: altura
+  * Atributo 4: peso
+* Entidade 2: Médicos - Corretas e Essenciais
+  * Atributo 1: id_medico
+  * Atributo 2: nome
+  * Atributo 3: especialização
+* Entidade 3: Consultas - Corretas e Essenciais
+  * Atributo 1: id_consulta
+  * Atributo 2: diagnostico
+  * Atributo 3: historico_paciente
+  * Atributo 3: plano_tratamento
+
 ---
 
 ## ✍️ Tarefa 3 — Identificar os **Relacionamentos**
@@ -64,6 +82,7 @@ Agora responda:
 ```md
 Paciente 1:N Consulta
 Médico 1:N Consulta
+Paciente N:N Medicos
 ```
 
 ---
